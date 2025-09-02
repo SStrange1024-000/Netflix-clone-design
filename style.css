@@ -398,6 +398,14 @@ h2{
     padding: 0;
 }
 
+/* Reponsive */
+@media (max-width:600px) {
+    
+    
+}
+
+/* signin main  */
+
 .sign_main{
     width: 100%;
     height: 145vh;
