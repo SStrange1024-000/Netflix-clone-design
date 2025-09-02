@@ -350,17 +350,16 @@ h2{
 
     .main_footer{
         width: 100%;
-        height: 55vh;
-        margin: 0;
-        background-color: black;
+        height: auto;
+        margin: 15vh 0;
+        background-color: rgb(0, 0, 0,0.7);
         color: rgb(154, 152, 152);
+        font-size: 1.5vw;
         font-family: sans-serif;
-        padding-top: 10vh;
-        position:relative;
-        bottom: 12px;
     }
 
     .item_a{
+        margin-top: 20px;
         margin-left: 20%;
         letter-spacing: .5px;
     }
@@ -398,11 +397,7 @@ h2{
     padding: 0;
 }
 
-/* Reponsive */
-@media (max-width:600px) {
-    
-    
-}
+
 
 /* signin main  */
 
@@ -421,18 +416,18 @@ h2{
 
 .sign_container{
     width: 25%;
-    height: 80vh;
+    min-width: 230px;
     border-radius: 5px;
     display: block;
     background-color: rgba(0, 0, 0, 0.8);
-    margin-left:40%;
+    margin: 10px auto ;
     padding-left: 3%;
     padding-top: 3%;
 }
 
 .sign_container h1{
     font-weight: normal;
-    font: 1.7em sans-serif;
+    font:3vw sans-serif;
 }
 
 .inp_container{
@@ -444,6 +439,7 @@ h2{
     margin: 5px 0 15px 0;
     background-color: rgb(55, 55, 55);
     border: none;
+    font-size: 1.5vw;
     align-items: center;
     text-align: start;
     padding-inline-start: 20px;
@@ -457,7 +453,7 @@ button{
     border-radius: 5px;
     border: none;
     color: white;
-    font: 1.3em sans-serif;
+    font: 2.0vw sans-serif;
     transition: 0.2s;
 }
 
@@ -472,13 +468,15 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
 }
 
 .checkbox_cont{
     width: 50%;
-    align-items: baseline;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
     font-family: sans-serif;
+    font-size: 10px;
 }
 .checkbox_cont .c_box{
     width: 10%;
@@ -502,7 +500,9 @@ label{
 .sign_up{
     width: 80%;
     color: white;
-    margin-top: 10vh;
+    margin: 10vh auto;
+    margin-left: 0;
+    padding-bottom: 15vh;
     font-family: sans-serif;
 }
 
@@ -523,4 +523,39 @@ label{
 .sign_up_desc a{
     text-decoration: none;
     color: rgba(0, 0, 255, 0.945);
+}
+
+/* Reponsive */
+@media only screen and (max-width:600px) {
+    
+    .sign_container h1{
+        font-size: 20px;
+    }
+
+    button{
+    width: 80%;
+    height: 5vh;
+    font: 15px sans-serif;
+    transition: 0.2s;
+}
+
+.inp_container input{
+    margin: 0px 0 15px 0;
+    padding-inline-start: 15px;
+    font-size: 13px;
+}
+
+.sign_up{
+    width: 80%;
+    margin: 10vh auto;
+    padding-bottom: 20vh;
+}
+
+.main_footer{
+        width: 100%;
+        margin: 15vh 0;
+        color: rgb(154, 152, 152);
+        font-size: 20px;
+    }
+    
 }
